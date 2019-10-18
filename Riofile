@@ -7,7 +7,7 @@ services:
     ports:
     - "80"
     rollout: true
-    rolloutIncrement: 6
+    rolloutIncrement: 4
     rolloutInterval: 5
     scale: 1-10
     weight: 100
