@@ -1,13 +1,13 @@
 services:
   testcontainer:
-    args: --annotations=config.linkerd.io/skip-outbound-ports=4006
+    args: --annotations=izaac.test.io/skip-outbound-ports=4006
     concurrency: 10
     image: sangeetha/mytestcontainer
     imagePullPolicy: IfNotPresent
     ports:
     - "80"
     rollout: true
-    rolloutIncrement: 4
+    rolloutIncrement: 6
     rolloutInterval: 5
     scale: 1-10
     weight: 100
